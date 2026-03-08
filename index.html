@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dory Foreign Language Center</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo-container">
+            <div class="logo-box">
+                <img src="image/LogoDory.jpg" alt="Dory Logo" class="logo">
+            </div>
+            <span class="brand-name">DORY CENTER</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Trang chủ</a></li>
+            <li><a href="#about">Về Dory</a></li>
+            <li><a href="#courses">Khóa học</a></li>
+            <li><a href="#contact">Liên hệ</a></li>
+        </ul>
+        <button class="btn-consult" id="openForm">ĐĂNG KÝ TƯ VẤN</button>
+
+        <div id="registrationModal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2>Đăng Ký Tư Vấn</h2>
+                <div class="underline"></div>
+                <form id="consultForm">
+                    <input type="text" placeholder="Họ và tên" required>
+                    <input type="email" placeholder="Email của bạn" required>
+                    <input type="tel" placeholder="Số điện thoại" required>
+                    <select>
+                        <option value="">Chọn khóa học quan tâm</option>
+                        <option value="kid">Tiếng Anh Mầm Non</option>
+                        <option value="junior">Tiếng Anh Thiếu Nhi</option>
+                        <option value="ielts">Luyện Thi Quốc Tế</option>
+                    </select>
+                    <textarea placeholder="Lời nhắn (nếu có)"></textarea>
+                    <button type="submit" class="btn-submit">GỬI THÔNG TIN</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="hero-slider">
+        <div class="slider-container">
+            <div class="slide active" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('image/dory_team.JPG');"></div>
+            <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('image/dory_team_1.JPG');"></div>
+            <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('image/dory_team_2.JPG');"></div>
+            <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('image/dory_team_3.JPG');"></div>
+        </div>
+        
+        <div class="hero-content">
+            <h1>SAILING FOR GLORY</h1>
+            <p>Khơi dậy niềm cảm hứng học tập ngay trong hôm nay!</p>
+            <a href="#courses" class="btn-primary">TÌM HIỂU THÊM</a>
+        </div>
+    </header>
+
+    <section class="stats">
+        <div class="stat-item">
+            <h3>2000+</h3>
+            <p>Học viên tín nhiệm</p>
+        </div>
+        <div class="stat-item">
+            <h3>+100</h3>
+            <p>Đối tác trường học & doanh nghiệp</p>
+        </div>
+        <div class="stat-item">
+            <h3>100%</h3>
+            <p>Giáo viên bản ngữ & chuyên môn cao</p>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Về Dory Center</h2>
+            <div class="underline"></div>
+            
+            <div class="about-wrapper">
+                <div class="about-text">
+                    <p><strong>Trung tâm Ngoại ngữ DORY</strong> được thành lập năm 2017 bởi Thạc sĩ Nguyễn Thị Khánh Ly[cite: 5, 12]. Với phương châm "Con người là yếu tố cốt lõi", chúng tôi không chỉ dạy ngôn ngữ mà còn kiến tạo cơ hội để học viên chạm đến ước mơ[cite: 102, 131].</p>
+                    
+                    <ul class="about-features">
+                        <li><i class="fas fa-star"></i> <strong>Phương pháp:</strong> Glenn Doman, Suzuki giúp phản xạ tự nhiên[cite: 9, 51].</li>
+                        <li><i class="fas fa-check"></i> <strong>Đội ngũ:</strong> 100% giáo viên nước ngoài bản ngữ; giáo viên VN có IELTS 7.0+[cite: 34, 35].</li>
+                        <li><i class="fas fa-heart"></i> <strong>Hoạt động:</strong> Lễ hội Halloween, Giáng sinh, kỹ năng sống phong phú[cite: 79, 85, 91].</li>
+                    </ul>
+                </div>
+                
+                <div class="photo-masonry">
+                    <div class="column">
+                        <a href="image/dory_team.JPG" class="gallery-item"><img src="image/dory_team.JPG" alt="Hoạt động mầm non"></a>
+                        <a href="image/dory_team.JPG" class="gallery-item tall"><img src="image/event3.jpg" alt="Giao lưu tiếng Anh"></a>
+                        <a href="image/dory_team.JPG" class="gallery-item"><img src="image/dory_class.jpg" alt="Lớp học tiểu học"></a>
+                    </div>
+                    <div class="column">
+                        <a href="image/dory_team.JPG" class="gallery-item wide"><img src="image/dory_team.JPG" alt="Sự kiện 20.11"></a>
+                        <a href="image/dory_team.JPG" class="gallery-item"><img src="image/dory_team.JPG" alt="Team building nhân viên"></a>
+                        <a href="image/dory_team.JPG" class="gallery-item"><img src="image/dory_team.JPG" alt="Lớp học IELTS"></a>
+                    </div>
+                    <div class="column">
+                        <a href="image/event2.jpg" class="gallery-item"><img src="image/event2.jpg" alt="Ngoại khóa kỹ năng sống"></a>
+                        <a href="image/event3.jpg" class="gallery-item tall"><img src="image/event3.jpg" alt="Giao lưu tiếng Anh"></a>
+                        <a href="image/team_building.jpg" class="gallery-item"><img src="image/team_building.jpg" alt="Team building nhân viên"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="lightboxModal" class="lightbox-modal">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightboxImg">
+        <div id="lightboxCaption"></div>
+    </div>
+
+    <section id="courses" class="courses">
+        <div class="container">
+            <h2 class="section-title">Chương Trình Học</h2>
+            <div class="underline"></div>
+            <div class="course-grid">
+                <div class="course-card">
+                    <i class="fas fa-child icon-box"></i>
+                    <h3>Tiếng Anh Mầm Non</h3>
+                    <p>Giúp con phản xạ ngôn ngữ và diễn đạt tự nhiên với phát âm chuẩn.</p>
+                </div>
+                <div class="course-card">
+                    <i class="fas fa-school icon-box"></i>
+                    <h3>Thiếu Nhi & Thiếu Niên</h3>
+                    <p>Tự tin giao tiếp trôi chảy, hình thành thói quen học tập độc lập.</p>
+                </div>
+                <div class="course-card">
+                    <i class="fas fa-graduation-cap icon-box"></i>
+                    <h3>Luyện Thi Quốc Tế</h3>
+                    <p>Cam kết đầu ra IELTS, TOEFL, TOEIC với đội ngũ cố vấn tận tâm.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer id="contact">
+        <div class="container">
+            <h3>THÔNG TIN LIÊN HỆ</h3>
+            <p><i class="fas fa-map-marker-alt"></i> 16 Lê Thanh Nghị, Hải Châu, Đà Nẵng</p>
+            <p><i class="fas fa-phone"></i> 0911 506 008 - 0988 792 927</p>
+            <p><i class="fab fa-facebook"></i> sailingforglory</p>
+        </div>
+    </footer>
+    <script src="script.js"></script> 
+</body>
+</html>
